@@ -14,6 +14,9 @@
 		360E576123079D6D004B5089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360E575F23079D6D004B5089 /* LaunchScreen.storyboard */; };
 		360E576C23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E576B23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift */; };
 		360E577723079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E577623079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift */; };
+		360E578623079E5F004B5089 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578523079E5F004B5089 /* Bank.swift */; };
+		360E578923079ED4004B5089 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578823079ED4004B5089 /* BankTests.swift */; };
+		360E578B2307A047004B5089 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578A2307A047004B5089 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		360E577223079D6D004B5089 /* SquareCashAppCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareCashAppCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		360E577623079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCashAppCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		360E577823079D6D004B5089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360E578523079E5F004B5089 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		360E578823079ED4004B5089 /* BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
+		360E578A2307A047004B5089 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		360E575523079D6C004B5089 /* SquareCashAppCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				360E578423079DF6004B5089 /* Bank */,
 				360E575623079D6C004B5089 /* AppDelegate.swift */,
 				360E575823079D6C004B5089 /* ViewController.swift */,
 				360E575A23079D6C004B5089 /* Main.storyboard */,
@@ -110,6 +117,7 @@
 		360E576A23079D6D004B5089 /* SquareCashAppCodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				360E578723079E64004B5089 /* Bank */,
 				360E576B23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift */,
 				360E576D23079D6D004B5089 /* Info.plist */,
 			);
@@ -123,6 +131,23 @@
 				360E577823079D6D004B5089 /* Info.plist */,
 			);
 			path = SquareCashAppCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		360E578423079DF6004B5089 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				360E578523079E5F004B5089 /* Bank.swift */,
+				360E578A2307A047004B5089 /* Customer.swift */,
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		360E578723079E64004B5089 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				360E578823079ED4004B5089 /* BankTests.swift */,
+			);
+			path = Bank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E578623079E5F004B5089 /* Bank.swift in Sources */,
 				360E575923079D6C004B5089 /* ViewController.swift in Sources */,
 				360E575723079D6C004B5089 /* AppDelegate.swift in Sources */,
+				360E578B2307A047004B5089 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				360E576C23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift in Sources */,
+				360E578923079ED4004B5089 /* BankTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
