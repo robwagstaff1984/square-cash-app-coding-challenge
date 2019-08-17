@@ -13,13 +13,21 @@ protocol CustomerProtocol {
     var balance: NSDecimalNumber { get }
 }
 
-struct Customer : CustomerProtocol {
+class Customer : CustomerProtocol {
     let identifier: UUID
-    let balance: NSDecimalNumber
+    var balance: NSDecimalNumber
     
     init(identifier: UUID = UUID(),
          balance:NSDecimalNumber = NSDecimalNumber(floatLiteral: 0)) {
         self.identifier = identifier
         self.balance = balance
+    }
+    
+    func credit(amount: NSDecimalNumber) {
+        balance = balance.adding(amount)
+    }
+    
+    func debit(amount: NSDecimalNumber) {
+        balance = balance.subtracting(amount)
     }
 }

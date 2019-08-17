@@ -10,24 +10,35 @@ import Foundation
 
 protocol BankProtocol {
     var balance: NSDecimalNumber { get }
-    func deposit(customer: Customer, amount: NSDecimalNumber)
-    func withdraw(customer: Customer, amount: NSDecimalNumber)
+    mutating func deposit(customerId: UUID, amount: NSDecimalNumber)
+    mutating func withdraw(customerId: UUID, amount: NSDecimalNumber)
 }
 
 struct Bank : BankProtocol {
-    let balance: NSDecimalNumber
     
-    init(balance:NSDecimalNumber = NSDecimalNumber(floatLiteral: 0)) {
-        self.balance = balance
+    var customers: [Customer]
+    
+    var balance: NSDecimalNumber {
+        return customers.reduce(0) { $0.adding($1.balance) }
+    }
+    
+    init(customers: [Customer] = []) {
+        self.customers = customers
     }
 }
 
 extension Bank {
-    func deposit(customer: Customer, amount: NSDecimalNumber) {
+    mutating func deposit(customerId: UUID, amount: NSDecimalNumber) {
+        guard let customer = customers.first(where: {$0.identifier == customerId}) else { return }
+        guard amount.compare(0) == ComparisonResult.orderedDescending else { return }
         
+        customer.credit(amount: amount)
     }
     
-    func withdraw(customer: Customer, amount: NSDecimalNumber) {
+    mutating func withdraw(customerId: UUID, amount: NSDecimalNumber) {
+        guard let customer = customers.first(where: {$0.identifier == customerId}) else { return }
+        guard customer.balance.compare(amount) != ComparisonResult.orderedAscending else { return }
         
+        customer.debit(amount: amount)
     }
 }
