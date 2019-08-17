@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360E575723079D6C004B5089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E575623079D6C004B5089 /* AppDelegate.swift */; };
+		360E575923079D6C004B5089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E575823079D6C004B5089 /* ViewController.swift */; };
+		360E575C23079D6C004B5089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360E575A23079D6C004B5089 /* Main.storyboard */; };
+		360E575E23079D6D004B5089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360E575D23079D6D004B5089 /* Assets.xcassets */; };
+		360E576123079D6D004B5089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360E575F23079D6D004B5089 /* LaunchScreen.storyboard */; };
+		360E576C23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E576B23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift */; };
+		360E577723079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E577623079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		360E576823079D6D004B5089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360E574B23079D6C004B5089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360E575223079D6C004B5089;
+			remoteInfo = SquareCashAppCodingChallenge;
+		};
+		360E577323079D6D004B5089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360E574B23079D6C004B5089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360E575223079D6C004B5089;
+			remoteInfo = SquareCashAppCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360E575323079D6C004B5089 /* SquareCashAppCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareCashAppCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360E575623079D6C004B5089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		360E575823079D6C004B5089 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		360E575B23079D6C004B5089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		360E575D23079D6D004B5089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		360E576023079D6D004B5089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		360E576223079D6D004B5089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360E576723079D6D004B5089 /* SquareCashAppCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareCashAppCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360E576B23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCashAppCodingChallengeTests.swift; sourceTree = "<group>"; };
+		360E576D23079D6D004B5089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360E577223079D6D004B5089 /* SquareCashAppCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareCashAppCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360E577623079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCashAppCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		360E577823079D6D004B5089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360E575023079D6C004B5089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E576423079D6D004B5089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E576F23079D6D004B5089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360E574A23079D6C004B5089 = {
+			isa = PBXGroup;
+			children = (
+				360E575523079D6C004B5089 /* SquareCashAppCodingChallenge */,
+				360E576A23079D6D004B5089 /* SquareCashAppCodingChallengeTests */,
+				360E577523079D6D004B5089 /* SquareCashAppCodingChallengeUITests */,
+				360E575423079D6C004B5089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360E575423079D6C004B5089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360E575323079D6C004B5089 /* SquareCashAppCodingChallenge.app */,
+				360E576723079D6D004B5089 /* SquareCashAppCodingChallengeTests.xctest */,
+				360E577223079D6D004B5089 /* SquareCashAppCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360E575523079D6C004B5089 /* SquareCashAppCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				360E575623079D6C004B5089 /* AppDelegate.swift */,
+				360E575823079D6C004B5089 /* ViewController.swift */,
+				360E575A23079D6C004B5089 /* Main.storyboard */,
+				360E575D23079D6D004B5089 /* Assets.xcassets */,
+				360E575F23079D6D004B5089 /* LaunchScreen.storyboard */,
+				360E576223079D6D004B5089 /* Info.plist */,
+			);
+			path = SquareCashAppCodingChallenge;
+			sourceTree = "<group>";
+		};
+		360E576A23079D6D004B5089 /* SquareCashAppCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				360E576B23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift */,
+				360E576D23079D6D004B5089 /* Info.plist */,
+			);
+			path = SquareCashAppCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		360E577523079D6D004B5089 /* SquareCashAppCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				360E577623079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift */,
+				360E577823079D6D004B5089 /* Info.plist */,
+			);
+			path = SquareCashAppCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		360E575223079D6C004B5089 /* SquareCashAppCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360E577B23079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallenge" */;
+			buildPhases = (
+				360E574F23079D6C004B5089 /* Sources */,
+				360E575023079D6C004B5089 /* Frameworks */,
+				360E575123079D6C004B5089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SquareCashAppCodingChallenge;
+			productName = SquareCashAppCodingChallenge;
+			productReference = 360E575323079D6C004B5089 /* SquareCashAppCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		360E576623079D6D004B5089 /* SquareCashAppCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360E577E23079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallengeTests" */;
+			buildPhases = (
+				360E576323079D6D004B5089 /* Sources */,
+				360E576423079D6D004B5089 /* Frameworks */,
+				360E576523079D6D004B5089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360E576923079D6D004B5089 /* PBXTargetDependency */,
+			);
+			name = SquareCashAppCodingChallengeTests;
+			productName = SquareCashAppCodingChallengeTests;
+			productReference = 360E576723079D6D004B5089 /* SquareCashAppCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		360E577123079D6D004B5089 /* SquareCashAppCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360E578123079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallengeUITests" */;
+			buildPhases = (
+				360E576E23079D6D004B5089 /* Sources */,
+				360E576F23079D6D004B5089 /* Frameworks */,
+				360E577023079D6D004B5089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360E577423079D6D004B5089 /* PBXTargetDependency */,
+			);
+			name = SquareCashAppCodingChallengeUITests;
+			productName = SquareCashAppCodingChallengeUITests;
+			productReference = 360E577223079D6D004B5089 /* SquareCashAppCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360E574B23079D6C004B5089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Robert Wagstaff";
+				TargetAttributes = {
+					360E575223079D6C004B5089 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					360E576623079D6D004B5089 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 360E575223079D6C004B5089;
+					};
+					360E577123079D6D004B5089 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 360E575223079D6C004B5089;
+					};
+				};
+			};
+			buildConfigurationList = 360E574E23079D6C004B5089 /* Build configuration list for PBXProject "SquareCashAppCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 360E574A23079D6C004B5089;
+			productRefGroup = 360E575423079D6C004B5089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360E575223079D6C004B5089 /* SquareCashAppCodingChallenge */,
+				360E576623079D6D004B5089 /* SquareCashAppCodingChallengeTests */,
+				360E577123079D6D004B5089 /* SquareCashAppCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360E575123079D6C004B5089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E576123079D6D004B5089 /* LaunchScreen.storyboard in Resources */,
+				360E575E23079D6D004B5089 /* Assets.xcassets in Resources */,
+				360E575C23079D6C004B5089 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E576523079D6D004B5089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E577023079D6D004B5089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360E574F23079D6C004B5089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E575923079D6C004B5089 /* ViewController.swift in Sources */,
+				360E575723079D6C004B5089 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E576323079D6D004B5089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E576C23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360E576E23079D6D004B5089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360E577723079D6D004B5089 /* SquareCashAppCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		360E576923079D6D004B5089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360E575223079D6C004B5089 /* SquareCashAppCodingChallenge */;
+			targetProxy = 360E576823079D6D004B5089 /* PBXContainerItemProxy */;
+		};
+		360E577423079D6D004B5089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360E575223079D6C004B5089 /* SquareCashAppCodingChallenge */;
+			targetProxy = 360E577323079D6D004B5089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		360E575A23079D6C004B5089 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360E575B23079D6C004B5089 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		360E575F23079D6D004B5089 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360E576023079D6D004B5089 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		360E577923079D6D004B5089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		360E577A23079D6D004B5089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		360E577C23079D6D004B5089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		360E577D23079D6D004B5089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		360E577F23079D6D004B5089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareCashAppCodingChallenge.app/SquareCashAppCodingChallenge";
+			};
+			name = Debug;
+		};
+		360E578023079D6D004B5089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareCashAppCodingChallenge.app/SquareCashAppCodingChallenge";
+			};
+			name = Release;
+		};
+		360E578223079D6D004B5089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SquareCashAppCodingChallenge;
+			};
+			name = Debug;
+		};
+		360E578323079D6D004B5089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SquareCashAppCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.automagically.SquareCashAppCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SquareCashAppCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360E574E23079D6C004B5089 /* Build configuration list for PBXProject "SquareCashAppCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360E577923079D6D004B5089 /* Debug */,
+				360E577A23079D6D004B5089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360E577B23079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360E577C23079D6D004B5089 /* Debug */,
+				360E577D23079D6D004B5089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360E577E23079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360E577F23079D6D004B5089 /* Debug */,
+				360E578023079D6D004B5089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360E578123079D6D004B5089 /* Build configuration list for PBXNativeTarget "SquareCashAppCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360E578223079D6D004B5089 /* Debug */,
+				360E578323079D6D004B5089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360E574B23079D6C004B5089 /* Project object */;
+}
