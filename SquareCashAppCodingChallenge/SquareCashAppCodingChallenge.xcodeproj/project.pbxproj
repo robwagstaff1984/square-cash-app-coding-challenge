@@ -17,6 +17,7 @@
 		360E578623079E5F004B5089 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578523079E5F004B5089 /* Bank.swift */; };
 		360E578923079ED4004B5089 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578823079ED4004B5089 /* BankTests.swift */; };
 		360E578B2307A047004B5089 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578A2307A047004B5089 /* Customer.swift */; };
+		360E578D2307C283004B5089 /* CustomerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E578C2307C283004B5089 /* CustomerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		360E578523079E5F004B5089 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		360E578823079ED4004B5089 /* BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
 		360E578A2307A047004B5089 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		360E578C2307C283004B5089 /* CustomerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				360E578823079ED4004B5089 /* BankTests.swift */,
+				360E578C2307C283004B5089 /* CustomerTests.swift */,
 			);
 			path = Bank;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				360E576C23079D6D004B5089 /* SquareCashAppCodingChallengeTests.swift in Sources */,
 				360E578923079ED4004B5089 /* BankTests.swift in Sources */,
+				360E578D2307C283004B5089 /* CustomerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

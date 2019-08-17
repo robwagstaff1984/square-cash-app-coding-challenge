@@ -9,18 +9,13 @@
 import XCTest
 @testable import SquareCashAppCodingChallenge
 
-//When Alice deposits $30 and withdraws $20
-//Then Alice’s balance will be $10 and the banks balance will be $10
-//Alice will be prevented from withdrawing another $20 to prevent her balance going negative
 class BankTests: XCTestCase {
     
     var bank: Bank!
     var customer: Customer!
     
-    
     override func setUp() {
-        customer = Customer()
-        bank = Bank(customers: [customer])
+        givenOneCustomerWithBalance(amount: 0)
     }
 
     func testDepositValidAmount() {
@@ -44,7 +39,7 @@ class BankTests: XCTestCase {
     }
     
     func testWithdrawLessThanCustomerBalance() {
-        givenCustomerWithBalance(amount: NSDecimalNumber(value: 30))
+        givenOneCustomerWithBalance(amount: NSDecimalNumber(value: 30))
         
         bank.withdraw(customerId: customer.identifier, amount: NSDecimalNumber(value: 20.00))
         
@@ -53,7 +48,7 @@ class BankTests: XCTestCase {
     }
     
     func testWithdrawAllOfCustomerBalance() {
-        givenCustomerWithBalance(amount: NSDecimalNumber(value: 50))
+        givenOneCustomerWithBalance(amount: NSDecimalNumber(value: 50))
         
         bank.withdraw(customerId: customer.identifier, amount: NSDecimalNumber(value: 50.00))
         
@@ -62,7 +57,7 @@ class BankTests: XCTestCase {
     }
     
     func testWithdrawMoreThanCustomerBalance() {
-        givenCustomerWithBalance(amount: NSDecimalNumber(value: 10))
+        givenOneCustomerWithBalance(amount: NSDecimalNumber(value: 10))
         
         bank.withdraw(customerId: customer.identifier, amount: NSDecimalNumber(value: 20.00))
         
@@ -70,8 +65,22 @@ class BankTests: XCTestCase {
         XCTAssertEqual(customer.balance, NSDecimalNumber(value: 10.00))
     }
     
-    func givenCustomerWithBalance(amount: NSDecimalNumber) {
+    func testMultipleCustomersCalculatesBalance() {
+        givenMultipleCustomers()
+        XCTAssertEqual(bank.balance, NSDecimalNumber(value: 100.00))
+        
+        bank.deposit(customerId: customer.identifier, amount: NSDecimalNumber(value: 99.12))
+        
+        XCTAssertEqual(bank.balance, NSDecimalNumber(value: 199.12))
+    }
+    
+    private func givenOneCustomerWithBalance(amount: NSDecimalNumber) {
         customer = Customer(balance: amount)
         bank = Bank(customers: [customer])
+    }
+    
+    private func givenMultipleCustomers() {
+        customer = Customer(balance: 0)
+        bank = Bank(customers: [customer, Customer(balance: 100)])
     }
 }

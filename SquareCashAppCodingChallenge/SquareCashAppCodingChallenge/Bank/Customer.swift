@@ -18,7 +18,7 @@ class Customer : CustomerProtocol {
     var balance: NSDecimalNumber
     
     init(identifier: UUID = UUID(),
-         balance:NSDecimalNumber = NSDecimalNumber(floatLiteral: 0)) {
+         balance:NSDecimalNumber = NSDecimalNumber(value: 0)) {
         self.identifier = identifier
         self.balance = balance
     }
@@ -28,6 +28,7 @@ class Customer : CustomerProtocol {
     }
     
     func debit(amount: NSDecimalNumber) {
+        guard balance.compare(amount) != ComparisonResult.orderedAscending else { return }
         balance = balance.subtracting(amount)
     }
 }

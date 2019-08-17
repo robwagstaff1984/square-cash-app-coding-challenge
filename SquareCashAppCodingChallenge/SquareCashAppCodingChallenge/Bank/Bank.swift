@@ -14,7 +14,7 @@ protocol BankProtocol {
     mutating func withdraw(customerId: UUID, amount: NSDecimalNumber)
 }
 
-struct Bank : BankProtocol {
+class Bank : BankProtocol {
     
     var customers: [Customer]
     
@@ -28,14 +28,14 @@ struct Bank : BankProtocol {
 }
 
 extension Bank {
-    mutating func deposit(customerId: UUID, amount: NSDecimalNumber) {
+    func deposit(customerId: UUID, amount: NSDecimalNumber) {
         guard let customer = customers.first(where: {$0.identifier == customerId}) else { return }
         guard amount.compare(0) == ComparisonResult.orderedDescending else { return }
         
         customer.credit(amount: amount)
     }
     
-    mutating func withdraw(customerId: UUID, amount: NSDecimalNumber) {
+    func withdraw(customerId: UUID, amount: NSDecimalNumber) {
         guard let customer = customers.first(where: {$0.identifier == customerId}) else { return }
         guard customer.balance.compare(amount) != ComparisonResult.orderedAscending else { return }
         
